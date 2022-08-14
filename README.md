@@ -9,9 +9,7 @@ because due new version of react some packages is still outdated
 2. Run the development server:
 
 npm run dev
-
-# or
-
+### or
 yarn dev
 
 3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
