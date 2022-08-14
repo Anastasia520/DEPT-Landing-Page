@@ -4,7 +4,7 @@
 
 npm install --legacy-peer-deps
 
-because due new version of react some packages is still outdated
+because due to new version of react some packages is still outdated
 
 2. Run the development server:
 
