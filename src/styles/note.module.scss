@@ -1,0 +1,76 @@
+@import "../assets/colors.scss";
+
+.cardContent {
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.cardWrapper {
+  width: 100vw;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.textContent {
+  position: absolute;
+  flex: 1;
+  padding: 32px;
+  width: 50%;
+}
+
+.noteBrand {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+  margin-bottom: 12px;
+}
+
+.noteTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+  overflow-wrap: break-word;
+}
+
+.workImg {
+  width: 100%;
+  height: auto;
+}
+
+.workLink {
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    .icon,
+    .iconFilled {
+      margin-right: 12px;
+    }
+
+    .iconFilled {
+      display: none;
+    }
+  }
+
+  a:hover {
+    .icon {
+      display: none;
+    }
+
+    .iconFilled {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .textContent {
+    width: 100%;
+  }
+}

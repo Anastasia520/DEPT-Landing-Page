@@ -1,0 +1,59 @@
+@import "../assets/colors.scss";
+
+.headerContainer {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black;
+  padding: 45px 55px;
+}
+
+.headerNav {
+  display: block;
+
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 48px;
+    cursor: pointer;
+    line-height: 18px;
+    transition: all 0.15s;
+    color: $white;
+  }
+
+  a:hover {
+    color: $white;
+    border-bottom: 1px solid $white;
+    padding-bottom: 2px;
+  }
+
+  a:first-child {
+    color: white;
+    border-bottom: 1px solid $white;
+    padding-bottom: 2px;
+  }
+}
+
+.imgMenu {
+  display: block;
+}
+
+.headerContainerMobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 20px;
+}
+
+@media screen and (min-width: 1256px) {
+  .headerContainer {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .headerContainerMobile {
+    display: flex;
+  }
+}

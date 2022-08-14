@@ -1,0 +1,81 @@
+@import "../assets/colors.scss";
+
+.banner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.mainBanner {
+  width: 100vw;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.desktopImg,
+.mobileImg,
+.mediumImg {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.textContent {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 55px;
+}
+
+.workText {
+  font-size: 16px;
+  font-weight: 400;
+  color: $white;
+  margin-bottom: 34px;
+}
+
+.mainText {
+  font-size: 34px;
+  font-weight: 400;
+  color: $white;
+  overflow-wrap: break-word;
+  margin-bottom: 80px;
+  width: 50%;
+}
+
+@media screen and (min-width: 1256px) {
+  .desktopImg {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .mobileImg {
+    display: block;
+  }
+
+  .mainText {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .textContent {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 1256px) {
+  .mediumImg {
+    display: block;
+  }
+
+  .mainText {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .textContent {
+    padding: 0 16px;
+  }
+}

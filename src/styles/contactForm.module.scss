@@ -1,0 +1,76 @@
+@import "../assets/colors.scss";
+
+.contactFormGrid {
+  padding: 55px;
+}
+
+.contactFormInputLabel,
+.contactFormInputLabelName {
+  font-size: 16px;
+}
+
+.contactFormMessageInput {
+  margin: 36px 0;
+}
+
+.contactFormBtn,
+.contactFormBtnMobile {
+  text-transform: unset !important;
+  border-radius: 50px !important;
+  border: 1px solid $black;
+  color: $black !important;
+  padding: 8px 64px;
+  font-size: 18px;
+  display: none;
+}
+
+@media screen and (max-width: 1256px) {
+  .contactFormBtn {
+    display: none;
+  }
+
+  .contactFormBtnMobile:hover {
+    background: $black !important;
+    border: 1px solid $white !important;
+    color: $white !important;
+  }
+
+  .contactFormBtnMobile {
+    display: block;
+    margin-top: 36px;
+  }
+
+  .contactFormGridItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contactFormMessageInput {
+    margin: 38px 0;
+  }
+
+  .contactFormGrid {
+    padding: 36px;
+  }
+
+  .contactFormInputLabelName {
+    margin-top: 38px;
+  }
+}
+
+@media screen and (min-width: 1256px) {
+  .contactFormBtn {
+    display: block;
+  }
+
+  .contactFormBtn:hover {
+    background: $black !important;
+    border: 1px solid $white !important;
+    color: $white !important;
+  }
+
+  .contactFormBtnMobile {
+    display: none;
+  }
+}

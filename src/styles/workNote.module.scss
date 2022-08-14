@@ -1,0 +1,23 @@
+@import "../assets/colors.scss";
+
+.workNotesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  background: $black;
+  padding: 32px;
+  height: 100%;
+}
+
+.workNotesWrapper :hover {
+  box-shadow: $shadow;
+}
+
+@media screen and (max-width: 1256px) {
+  .workNotesWrapper {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,135 @@
+@import "../assets/colors.scss";
+
+.footer {
+  display: flex;
+}
+
+.container {
+  width: 90%;
+  align-items: center;
+  background-color: $black;
+  padding: 45px 55px 90px 55px;
+}
+
+.linkContainer {
+  display: flex;
+  padding-bottom: 32px;
+}
+
+.nav {
+  display: flex;
+  margin-left: 112px;
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 20px;
+    cursor: pointer;
+    line-height: 16px;
+    transition: all 0.15s;
+    color: $white;
+  }
+}
+
+.imgMenu {
+  display: block;
+}
+
+.footerInfo {
+  display: flex;
+  color: $dark-gray;
+  justify-content: space-between;
+  width: 60%;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.footerInfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  color: $dark-gray;
+}
+
+.footerLogo {
+  display: none;
+}
+
+.footerTop {
+  display: none;
+}
+
+@media screen and (min-width: 1256px) {
+  .footerLogo {
+    display: block;
+  }
+
+  .footerSocialMedia {
+    display: none;
+  }
+
+  .footerTop {
+    width: 10%;
+    display: block;
+    text-align: center;
+    background: $white;
+    margin: auto auto;
+
+    a {
+      cursor: pointer;
+      color: $blue;
+      transition: all 0.15s;
+    }
+
+    a:hover {
+      margin-bottom: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .container {
+    width: 100%;
+  }
+
+  .footerSocialMedia {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin-bottom: 40px;
+      cursor: pointer;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+
+    a {
+      margin: 0 0 48px 0px;
+    }
+  }
+
+  .linkContainer {
+    justify-content: space-between;
+  }
+
+  .container {
+    padding: 45px 36px;
+  }
+
+  .footerInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 24px;
+  }
+}
